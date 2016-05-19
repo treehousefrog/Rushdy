@@ -8,13 +8,11 @@ public class Controls : MonoBehaviour {
     public bool moveright;
     public bool moveleft;
     
-    // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody2D>();
 
     }
 
-    // Update is called once per frame
     void Update () {
 
 
@@ -40,14 +38,4 @@ public class Controls : MonoBehaviour {
         }
 
     }
-    public void goright ()
-    {
-        
-
-    }
-    public void goleft ()
-    {
-        rb.velocity = new Vector2(-movespeed, rb.velocity.y);
-
-    }
-}
+ }
